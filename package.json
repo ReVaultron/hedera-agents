@@ -1,0 +1,32 @@
+{
+  "name": "revaultron-agents",
+  "version": "1.0.0",
+  "description": "A2A Hedera Agents for ReVaultron",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "tsx src/index.ts",
+    "test": "tsx scripts/test-agent-flow.ts",
+    "test:ai": "tsx scripts/test-ai-agents.ts",
+    "build": "tsc",
+    "dev": "tsx watch src/index.ts"
+  },
+  "dependencies": {
+    "@a2a-js/sdk": "^0.3.4",
+    "@google/generative-ai": "^0.21.0",
+    "@hashgraph/sdk": "^2.77.0",
+    "axios": "^1.13.2",
+    "dotenv": "^16.6.1",
+    "ethers": "^6.13.4",
+    "express": "^4.21.1",
+    "hardhat": "^3.0.15",
+    "uuid": "^11.0.3"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.10.2",
+    "@types/uuid": "^10.0.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
