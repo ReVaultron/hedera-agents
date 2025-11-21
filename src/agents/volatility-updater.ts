@@ -24,7 +24,7 @@ export class VolatilityUpdaterExecutor extends BaseAgentExecutor {
       } catch (error: any) {
         console.error("Error in periodic update:", error.message);
       }
-    }, 300000); // 30 seconds
+    }, 120000); // 120,000 ms = 2 minutes
   }
 
   stopPeriodicUpdates() {
